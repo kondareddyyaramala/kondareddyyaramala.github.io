@@ -9,8 +9,11 @@
     <br>
 
     <!-- Projects -->
-    <project-card></project-card>
-    <br>
+    <div *ngFor="let project of projects">
+      <project-card [project]="project"></project-card>
+      <br>
+    </div>
+
 
     <!-- Skill set -->
     <skill-set [skills]="skills"></skill-set>
