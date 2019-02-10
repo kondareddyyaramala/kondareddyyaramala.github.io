@@ -1,4 +1,9 @@
 .about-me{
     display: flex;
     justify-content: center;
+    border: 1px solid;
+    box-shadow: 1px 1px;
+    .description{
+        padding: 5px;
+    }
 }

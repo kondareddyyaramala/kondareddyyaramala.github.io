@@ -1,6 +1,11 @@
-<div class="project-card">
-  <!-- Horizontal flow -->
-  <div class="project-dates">Project details start and end date comes here</div>
-  <div class="client-image">Image of the cient</div>
-  <div class="project-description">Description of the project</div>
-</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{clientName}}</mat-card-title>
+    <mat-card-subtitle>{{projectDuration}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{projectDescription}}
+    </p>
+  </mat-card-content>
+</mat-card>

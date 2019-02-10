@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatNativeDateModule } from '@angular/material';
+import { MaterialModule } from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,9 +22,12 @@ import { PillComponent } from './components/pill/pill.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatNativeDateModule,
+    MaterialModule
   ],
-  providers: [],
+  entryComponents: [ProjectCardComponent],
+  providers: [ProjectCardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
