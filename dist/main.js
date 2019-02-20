@@ -74,7 +74,7 @@ module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Hea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9hcHAuY29tcG9uZW50LnNjc3MifQ== */"
 
 /***/ }),
 
@@ -99,8 +99,12 @@ var AppComponent = /** @class */ (function () {
         this.skills = ['Java', 'Angular'];
         this.projects = [new _models_project__WEBPACK_IMPORTED_MODULE_2__["Project"]({
                 clientName: "Uline",
-                duration: "Jan 2017 to present",
-                description: "Uline is a rapidly growing shipping supplies company, which has more than twenty branches across US, Canada, and Mexico. Currently at Uline we are converting all the legacy services and applications to modern web applications and web services using cutting edge technologies available in the market.\n    My daily duties at Uline includes:\n    1. Working with business team on requirements gathering and grooming stories.\n    2. Working with development team on vetting out the design and implementation approaches for the feature work.\n    3. Develop rich responsive web applications using Angular framework.\n    4. Building REST services using Sprintboot, Java, Hibernate.\n    5. Writing tests for the feature work using different testing tools like Jasmine, Mockito, Karma, Puppeteer.\n    6. Helping QA team in testing the feature work and fixing any bugs that are blocking their testing"
+                duration: "Feb 2017 to present",
+                description: "Uline is a shipping supply company which has active operations in US, Canada, and\n    Mexico. As part of the G2 modernization project they have migrating all of thier services\n    into new systems using latest technologies like Angular, Spring boot, Hibernate. For the past\n    two years I have been working as a full stack developer."
+            }), new _models_project__WEBPACK_IMPORTED_MODULE_2__["Project"]({
+                clientName: "Wellsfargo",
+                duration: "Jan 2016 to Jan 2017",
+                description: "Wellsfargo (Mortgage) aplication is a giant application and has been processing a\n    huge number of mortagage applications in US. During my tenure at Wellsfasrgo, I got chance to \n    work on developing new features and integrating with other external services using different\n    technologies AngularJS, Spring, Hibernate."
             })];
     }
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -200,7 +204,7 @@ module.exports = "<mat-card class=\"example-card\">\n  <mat-card-content>\n    I
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about-me {\n  display: flex;\n  justify-content: center;\n  border: 1px solid;\n  box-shadow: 1px 1px; }\n  .about-me .description {\n    padding: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsaUJBQWlCO0VBQ2pCLG1CQUFtQixFQUFBO0VBSnZCO0lBTVEsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hYm91dC1tZXtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xuICAgIGJveC1zaGFkb3c6IDFweCAxcHg7XG4gICAgLmRlc2NyaXB0aW9ue1xuICAgICAgICBwYWRkaW5nOiA1cHg7XG4gICAgfVxufSJdfQ== */"
+module.exports = ".about-me {\n  display: flex;\n  justify-content: center;\n  border: 1px solid;\n  box-shadow: 1px 1px; }\n  .about-me .description {\n    padding: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsaUJBQWlCO0VBQ2pCLG1CQUFtQixFQUFBO0VBSnZCO0lBTVEsWUFBWSxFQUFBIiwiZmlsZSI6ImFib3V0LW1lL2Fib3V0LW1lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFib3V0LW1le1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQ7XG4gICAgYm94LXNoYWRvdzogMXB4IDFweDtcbiAgICAuZGVzY3JpcHRpb257XG4gICAgICAgIHBhZGRpbmc6IDVweDtcbiAgICB9XG59Il19 */"
 
 /***/ }),
 
@@ -256,7 +260,7 @@ module.exports = "<div class=\"header\">\n  <div class=\"name\">Konda Reddy Yara
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  background-color: #0073b1;\n  height: 60px;\n  border-radius: 29px;\n  align-items: center;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVye1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwNzNiMTtcbiAgICBoZWlnaHQ6IDYwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogMjlweDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
+module.exports = ".header {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  background-color: #0073b1;\n  height: 60px;\n  align-items: center;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLFlBQVksRUFBQSIsImZpbGUiOiJoZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDczYjE7XG4gICAgaGVpZ2h0OiA2MHB4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgY29sb3I6IHdoaXRlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -312,7 +316,7 @@ module.exports = "<span class=\"pill\">\n  {{skill}}\n</span>"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pill {\n  border-radius: 6px;\n  background-color: red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9waWxsL3BpbGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBa0I7RUFDbEIscUJBQXFCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3BpbGwvcGlsbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5waWxse1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XG59Il19 */"
+module.exports = ".pill {\n  border-radius: 6px;\n  background-color: red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9waWxsL3BpbGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBa0I7RUFDbEIscUJBQXFCLEVBQUEiLCJmaWxlIjoicGlsbC9waWxsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBpbGx7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -369,7 +373,7 @@ module.exports = "<mat-card class=\"example-card\">\n  <mat-card-header>\n    <m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".project-card {\n  display: flex;\n  flex-direction: row; }\n  .project-card .project-dates {\n    flex: 1; }\n  .project-card .client-image {\n    flex: 2; }\n  .project-card .project-description {\n    flex: 2; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLG1CQUFtQixFQUFBO0VBRnZCO0lBSVEsT0FBTyxFQUFBO0VBSmY7SUFRUSxPQUFPLEVBQUE7RUFSZjtJQVlRLE9BQU8sRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1jYXJkL3Byb2plY3QtY2FyZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9qZWN0LWNhcmR7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIC5wcm9qZWN0LWRhdGVze1xuICAgICAgICBmbGV4OiAxO1xuICAgIH1cblxuICAgIC5jbGllbnQtaW1hZ2V7XG4gICAgICAgIGZsZXg6IDI7XG4gICAgfVxuXG4gICAgLnByb2plY3QtZGVzY3JpcHRpb257XG4gICAgICAgIGZsZXg6IDI7XG4gICAgfVxufSJdfQ== */"
+module.exports = ".project-card {\n  display: flex;\n  flex-direction: row; }\n  .project-card .project-dates {\n    flex: 1; }\n  .project-card .client-image {\n    flex: 2; }\n  .project-card .project-description {\n    flex: 2; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLG1CQUFtQixFQUFBO0VBRnZCO0lBSVEsT0FBTyxFQUFBO0VBSmY7SUFRUSxPQUFPLEVBQUE7RUFSZjtJQVlRLE9BQU8sRUFBQSIsImZpbGUiOiJwcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb2plY3QtY2FyZHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgLnByb2plY3QtZGF0ZXN7XG4gICAgICAgIGZsZXg6IDE7XG4gICAgfVxuXG4gICAgLmNsaWVudC1pbWFnZXtcbiAgICAgICAgZmxleDogMjtcbiAgICB9XG5cbiAgICAucHJvamVjdC1kZXNjcmlwdGlvbntcbiAgICAgICAgZmxleDogMjtcbiAgICB9XG59Il19 */"
 
 /***/ }),
 
@@ -428,7 +432,7 @@ module.exports = "<div class=\"skill-set\">\n  <span class=\"skill\" *ngFor=\"le
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvc2tpbGwtc2V0L3NraWxsLXNldC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJza2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIn0= */"
 
 /***/ }),
 
@@ -568,6 +572,7 @@ var Project = /** @class */ (function () {
         this.clientName = config.clientName;
         this.duration = config.duration;
         this.description = config.description;
+        this.duties = config.duties;
     }
     return Project;
 }());
