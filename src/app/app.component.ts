@@ -22,5 +22,13 @@ export class AppComponent {
     huge number of mortagage applications in US. During my tenure at Wellsfasrgo, I got chance to 
     work on developing new features and integrating with other external services using different
     technologies AngularJS, Spring, Hibernate.`
+  }),
+  new Project({
+    clientName: "All Tech Media",
+    duration: "Jan 2014 to July 2014",
+    description: `All Tech Media is an IT consulting firm which helps clients in all pahses of the
+    application development. During my tenure at All tech Media, I was part of a development in building
+    responsive web applications using variety of front-end technologies and also worked on the server
+    sie coding using Java.`
   })]
 }
