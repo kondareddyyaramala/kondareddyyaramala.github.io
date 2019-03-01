@@ -1,15 +1,5 @@
 .project-card{
-    display: flex;
-    flex-direction: row;
-    .project-dates{
-        flex: 1;
-    }
-
-    .client-image{
-        flex: 2;
-    }
-
-    .project-description{
-        flex: 2;
+    .example-header-image {
+        background-size: cover;
     }
 }
