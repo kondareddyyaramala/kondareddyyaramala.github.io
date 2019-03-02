@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Header Comp -->\n    <header></header>\n    <br>\n\n    <!-- About me / something better -->\n    <heading [heading]=\"'About Me'\"></heading>\n    <about-me></about-me>\n    <br>\n\n    <!-- Projects -->\n    <heading [heading]=\"'Projects'\"></heading>\n    <div *ngFor=\"let project of projects\">\n      <project-card [project]=\"project\"></project-card>\n      <br>\n    </div>\n\n    <!-- Education details -->\n    <heading [heading]=\"'Education'\"></heading>\n    <div *ngFor=\"let education of educationDetails\">\n      <education [education]=\"education\"></education>\n      <br>\n    </div>\n\n\n\n    <!-- Skill set -->\n    <heading [heading]=\"'Skills'\"></heading>\n    <skill-set [skills]=\"skills\"></skill-set>\n    <br>\n\n    <!-- Download resume -->\n  </div>\n</div>"
+module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Header Comp -->\n    <header></header>\n    <br>\n\n    <!-- About me / something better -->\n    <heading [heading]=\"'About Me'\"></heading>\n    <about-me></about-me>\n    <br>\n\n    <!-- Projects -->\n    <heading [heading]=\"'Projects'\"></heading>\n    <div *ngFor=\"let project of projects\">\n      <project-card [project]=\"project\"></project-card>\n      <br>\n    </div>\n\n    <!-- Education details -->\n    <heading [heading]=\"'Education'\"></heading>\n    <div *ngFor=\"let education of educationDetails\">\n      <education [education]=\"education\"></education>\n      <br>\n    </div>\n\n    <!-- Skill set -->\n    <heading [heading]=\"'Skills'\"></heading>\n    <skill-set [skills]=\"skills\"></skill-set>\n    <br>\n\n    <!-- Download resume -->\n  </div>\n</div>"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Hea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".row .container {\n  padding-left: 5px;\n  padding-right: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRVEsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJvd3tcbiAgICAuY29udGFpbmVye1xuICAgICAgICBwYWRkaW5nLWxlZnQ6IDVweDtcbiAgICAgICAgcGFkZGluZy1yaWdodDogNXB4O1xuICAgIH1cbn1cbiJdfQ== */"
 
 /***/ }),
 
