@@ -414,7 +414,7 @@ var ProjectCardComponent = /** @class */ (function () {
     };
     ProjectCardComponent.prototype.ngOnChanges = function (changes) {
         if (changes && changes.project) {
-            this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle("url('../../../assets/" + this.getImageString() + "')");
+            this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle("url('../../../dist/assets/" + this.getImageString() + "')");
         }
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
