@@ -7,7 +7,6 @@ import { Project } from './models/project';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  skills = ['Java', 'Angular'];
   projects = [new Project({
     clientName: "Uline",
     duration: "Feb 2017 to present",
@@ -31,4 +30,9 @@ export class AppComponent {
     responsive web applications using variety of front-end technologies and also worked on the server
     sie coding using Java.`
   })]
+
+
+  // skills
+  skills = ['React', 'Angular', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Protractor', 'Karma', 'ngRx',
+            'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API' ];
 }

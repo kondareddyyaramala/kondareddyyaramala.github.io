@@ -1,5 +1,5 @@
 <div class="skill-set">
-  <span class="skill" *ngFor="let skill of skills">
-    <pill [skill]="skill"></pill> &nbsp;
-  </span>
+  <ng-container class="skill" *ngFor="let skill of skills">
+    <pill [skill]="skill"></pill>
+  </ng-container>
 </div>
