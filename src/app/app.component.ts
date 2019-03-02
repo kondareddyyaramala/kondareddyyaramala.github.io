@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Project } from './models/project';
+import { Education } from './models/education';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +33,16 @@ export class AppComponent {
     responsive web applications using variety of front-end technologies and creating Rest services using using Java and Spring framework`
   })]
 
+
+  // educationDetails
+  educationDetails  = [
+    new Education({
+      collegeName: 'Oklahoma Christian University',
+      duration: 'July 2014 to Dec 2015',
+      degreeName: 'Master of Science in Engineering',
+      description: 'Completed masters with 3.5 GPA'
+    })
+  ]
 
   // skills
   skills = ['React', 'Angular', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Protractor', 'Karma', 'ngRx',

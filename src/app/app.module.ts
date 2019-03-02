@@ -11,6 +11,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { SkillSetComponent } from './components/skill-set/skill-set.component';
 import { PillComponent } from './components/pill/pill.component';
 import { HeadingComponent } from './components/heading/heading.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeadingComponent } from './components/heading/heading.component';
     ProjectCardComponent,
     SkillSetComponent,
     PillComponent,
-    HeadingComponent
+    HeadingComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

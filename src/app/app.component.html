@@ -16,6 +16,14 @@
       <br>
     </div>
 
+    <!-- Education details -->
+    <heading [heading]="'Education'"></heading>
+    <div *ngFor="let education of educationDetails">
+      <education [education]="education"></education>
+      <br>
+    </div>
+
+
 
     <!-- Skill set -->
     <heading [heading]="'Skills'"></heading>
