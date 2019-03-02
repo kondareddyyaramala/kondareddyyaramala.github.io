@@ -10,6 +10,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SkillSetComponent } from './components/skill-set/skill-set.component';
 import { PillComponent } from './components/pill/pill.component';
+import { HeadingComponent } from './components/heading/heading.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PillComponent } from './components/pill/pill.component';
     AboutMeComponent,
     ProjectCardComponent,
     SkillSetComponent,
-    PillComponent
+    PillComponent,
+    HeadingComponent
   ],
   imports: [
     BrowserModule,

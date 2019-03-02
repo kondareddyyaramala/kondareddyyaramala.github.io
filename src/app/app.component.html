@@ -5,10 +5,12 @@
     <br>
 
     <!-- About me / something better -->
+    <heading [heading]="'About Me'"></heading>
     <about-me></about-me>
     <br>
 
     <!-- Projects -->
+    <heading [heading]="'Projects'"></heading>
     <div *ngFor="let project of projects">
       <project-card [project]="project"></project-card>
       <br>
@@ -16,6 +18,7 @@
 
 
     <!-- Skill set -->
+    <heading [heading]="'Skills'"></heading>
     <skill-set [skills]="skills"></skill-set>
     <br>
 
