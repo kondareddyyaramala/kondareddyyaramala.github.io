@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Header Comp -->\n    <header></header>\n    <br>\n\n    <!-- About me / something better -->\n    <about-me></about-me>\n    <br>\n\n    <!-- Projects -->\n    <div *ngFor=\"let project of projects\">\n      <project-card [project]=\"project\"></project-card>\n      <br>\n    </div>\n\n\n    <!-- Skill set -->\n    <skill-set [skills]=\"skills\"></skill-set>\n    <br>\n\n    <!-- Download resume -->\n  </div>\n</div>"
+module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Header Comp -->\n    <header></header>\n    <br>\n\n    <!-- About me / something better -->\n    <heading [heading]=\"'About Me'\"></heading>\n    <about-me></about-me>\n    <br>\n\n    <!-- Projects -->\n    <heading [heading]=\"'Projects'\"></heading>\n    <div *ngFor=\"let project of projects\">\n      <project-card [project]=\"project\"></project-card>\n      <br>\n    </div>\n\n\n    <!-- Skill set -->\n    <heading [heading]=\"'Skills'\"></heading>\n    <skill-set [skills]=\"skills\"></skill-set>\n    <br>\n\n    <!-- Download resume -->\n  </div>\n</div>"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Hea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9hcHAuY29tcG9uZW50LnNjc3MifQ== */"
 
 /***/ }),
 
@@ -99,16 +99,16 @@ var AppComponent = /** @class */ (function () {
         this.projects = [new _models_project__WEBPACK_IMPORTED_MODULE_2__["Project"]({
                 clientName: "Uline",
                 duration: "Feb 2017 to present",
-                description: "Uline is a shipping supply company which has active operations in US, Canada, and\n    Mexico. As part of the G2 modernization project they have migrating all of thier services\n    into new systems using latest technologies like Angular, Spring boot, Hibernate. For the past\n    two years I have been working as a full stack developer."
+                description: "Uline is a shipping supply company which has active operations in US, Canada, and\n    Mexico. As part of the G2 modernization project they are migrating all of thier legacy systems\n    into new microservices and responsive web applications using latest technologies like Angular, \n    Spring boot, Hibernate. I have been working for Uline for past two years on one of the key project, Quotes.\n    My daily duties include working with business team to groom stories, sorting out technical approaches, working with \n    UX designers to get mock ups for the screens and active coding both in front-end and back-end."
             }), new _models_project__WEBPACK_IMPORTED_MODULE_2__["Project"]({
                 clientName: "Wellsfargo",
                 duration: "Jan 2016 to Jan 2017",
-                description: "Wellsfargo (Mortgage) aplication is a giant application and has been processing a\n    huge number of mortagage applications in US. During my tenure at Wellsfasrgo, I got chance to \n    work on developing new features and integrating with other external services using different\n    technologies AngularJS, Spring, Hibernate."
+                description: "Wellsfargo (Mortgage) aplication was a giant application and was one of the leading company in processing a\n    huge number of mortagage applications in the US. During my tenure at Wellsfasrgo, I worked on a webapplication which was embedded into the\n    existing application.\n    "
             }),
             new _models_project__WEBPACK_IMPORTED_MODULE_2__["Project"]({
                 clientName: "All Tech Media",
                 duration: "Jan 2014 to July 2014",
-                description: "All Tech Media is an IT consulting firm which helps clients in all pahses of the\n    application development. During my tenure at All tech Media, I was part of a development in building\n    responsive web applications using variety of front-end technologies and also worked on the server\n    sie coding using Java."
+                description: "All Tech Media is an IT consulting firm which helps clients in all pahses of the\n    application development. During my perios at All Tech Media, I was part of a development team in building\n    responsive web applications using variety of front-end technologies and creating Rest services using using Java and Spring framework"
             })];
         // skills
         this.skills = ['React', 'Angular', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Protractor', 'Karma', 'ngRx',
@@ -150,6 +150,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_project_card_project_card_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/project-card/project-card.component */ "./src/app/components/project-card/project-card.component.ts");
 /* harmony import */ var _components_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/skill-set/skill-set.component */ "./src/app/components/skill-set/skill-set.component.ts");
 /* harmony import */ var _components_pill_pill_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/pill/pill.component */ "./src/app/components/pill/pill.component.ts");
+/* harmony import */ var _components_heading_heading_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/heading/heading.component */ "./src/app/components/heading/heading.component.ts");
+
 
 
 
@@ -173,7 +175,8 @@ var AppModule = /** @class */ (function () {
                 _components_about_me_about_me_component__WEBPACK_IMPORTED_MODULE_8__["AboutMeComponent"],
                 _components_project_card_project_card_component__WEBPACK_IMPORTED_MODULE_9__["ProjectCardComponent"],
                 _components_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_10__["SkillSetComponent"],
-                _components_pill_pill_component__WEBPACK_IMPORTED_MODULE_11__["PillComponent"]
+                _components_pill_pill_component__WEBPACK_IMPORTED_MODULE_11__["PillComponent"],
+                _components_heading_heading_component__WEBPACK_IMPORTED_MODULE_12__["HeadingComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -211,7 +214,7 @@ module.exports = "<mat-card class=\"example-card\">\n  <mat-card-content>\n    I
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about-me {\n  display: flex;\n  justify-content: center;\n  border: 1px solid;\n  box-shadow: 1px 1px; }\n  .about-me .description {\n    padding: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsaUJBQWlCO0VBQ2pCLG1CQUFtQixFQUFBO0VBSnZCO0lBTVEsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hYm91dC1tZXtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xuICAgIGJveC1zaGFkb3c6IDFweCAxcHg7XG4gICAgLmRlc2NyaXB0aW9ue1xuICAgICAgICBwYWRkaW5nOiA1cHg7XG4gICAgfVxufSJdfQ== */"
+module.exports = ".about-me {\n  display: flex;\n  justify-content: center;\n  border: 1px solid;\n  box-shadow: 1px 1px; }\n  .about-me .description {\n    padding: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsaUJBQWlCO0VBQ2pCLG1CQUFtQixFQUFBO0VBSnZCO0lBTVEsWUFBWSxFQUFBIiwiZmlsZSI6ImFib3V0LW1lL2Fib3V0LW1lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFib3V0LW1le1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQ7XG4gICAgYm94LXNoYWRvdzogMXB4IDFweDtcbiAgICAuZGVzY3JpcHRpb257XG4gICAgICAgIHBhZGRpbmc6IDVweDtcbiAgICB9XG59Il19 */"
 
 /***/ }),
 
@@ -267,7 +270,7 @@ module.exports = "<div class=\"header\">\n  <div class=\"name\">Konda Reddy Yara
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  background-color: #546E7A;\n  height: 60px;\n  align-items: center;\n  color: white;\n  border-bottom: 10px solid green; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLFlBQVk7RUFDWiwrQkFBK0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTQ2RTdBO1xuICAgIGhlaWdodDogNjBweDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItYm90dG9tOiAxMHB4IHNvbGlkIGdyZWVuO1xufSJdfQ== */"
+module.exports = ".header {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  background-color: #546E7A;\n  height: 60px;\n  align-items: center;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLFlBQVksRUFBQSIsImZpbGUiOiJoZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICM1NDZFN0E7XG4gICAgaGVpZ2h0OiA2MHB4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIC8vIGJvcmRlci1ib3R0b206IDEwcHggc29saWQgZ3JlZW47XG59Il19 */"
 
 /***/ }),
 
@@ -305,6 +308,66 @@ var HeaderComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/heading/heading.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/components/heading/heading.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\n  <h3 class=\"heading\"> {{ heading }}</h3>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/heading/heading.component.scss":
+/*!***********************************************************!*\
+  !*** ./src/app/components/heading/heading.component.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".wrapper {\n  display: flex;\n  align-content: center;\n  justify-content: center; }\n  .wrapper .heading {\n    border-bottom: 2px solid #546E7A; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkaW5nL2hlYWRpbmcuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IscUJBQXFCO0VBQ3JCLHVCQUF1QixFQUFBO0VBSDNCO0lBS1EsZ0NBQWdDLEVBQUEiLCJmaWxlIjoiaGVhZGluZy9oZWFkaW5nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLndyYXBwZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgLmhlYWRpbmd7XG4gICAgICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAjNTQ2RTdBO1xuICAgIH1cbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/heading/heading.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/heading/heading.component.ts ***!
+  \*********************************************************/
+/*! exports provided: HeadingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeadingComponent", function() { return HeadingComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HeadingComponent = /** @class */ (function () {
+    function HeadingComponent() {
+    }
+    HeadingComponent.prototype.ngOnInit = function () {
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], HeadingComponent.prototype, "heading", void 0);
+    HeadingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'heading',
+            template: __webpack_require__(/*! ./heading.component.html */ "./src/app/components/heading/heading.component.html"),
+            styles: [__webpack_require__(/*! ./heading.component.scss */ "./src/app/components/heading/heading.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], HeadingComponent);
+    return HeadingComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/pill/pill.component.html":
 /*!*****************************************************!*\
   !*** ./src/app/components/pill/pill.component.html ***!
@@ -323,7 +386,7 @@ module.exports = "<div class=\"pill\">\n  {{skill}}\n</div>"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pill {\n  border-radius: 10px;\n  color: white;\n  background-color: #546E7A;\n  padding: 5px;\n  padding-left: 6px;\n  margin: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9waWxsL3BpbGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLFdBQVcsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGlsbC9waWxsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBpbGx7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzU0NkU3QTtcbiAgICBwYWRkaW5nOiA1cHg7XG4gICAgcGFkZGluZy1sZWZ0OiA2cHg7XG4gICAgbWFyZ2luOiA1cHg7XG59Il19 */"
+module.exports = ".pill {\n  border-radius: 10px;\n  color: white;\n  background-color: #546E7A;\n  padding: 5px;\n  padding-left: 6px;\n  margin: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9waWxsL3BpbGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLFdBQVcsRUFBQSIsImZpbGUiOiJwaWxsL3BpbGwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGlsbHtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTQ2RTdBO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDZweDtcbiAgICBtYXJnaW46IDVweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -380,7 +443,7 @@ module.exports = "<mat-card class=\"project-card\">\n  <mat-card-header>\n    <d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1jYXJkL3Byb2plY3QtY2FyZC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJwcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIn0= */"
 
 /***/ }),
 
@@ -454,7 +517,7 @@ module.exports = "<div class=\"skill-set\">\n  <ng-container class=\"skill\" *ng
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".skill-set {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNraWxsLXNldHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBwYWRkaW5nLWxlZnQ6IDMwJTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAzMCU7XG5cbn0iXX0= */"
+module.exports = ".skill-set {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNraWxsLXNldC9za2lsbC1zZXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2tpbGwtc2V0e1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgZmxleC13cmFwOiB3cmFwO1xuICAgIHBhZGRpbmctbGVmdDogMzAlO1xuICAgIHBhZGRpbmctcmlnaHQ6IDMwJTtcblxufSJdfQ== */"
 
 /***/ }),
 
