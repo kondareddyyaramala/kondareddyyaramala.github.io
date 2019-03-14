@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Project } from './models/project';
+import { Education } from './models/education';
 
 @Component({
   selector: 'app-root',
@@ -11,28 +12,39 @@ export class AppComponent {
     clientName: "Uline",
     duration: "Feb 2017 to present",
     description: `Uline is a shipping supply company which has active operations in US, Canada, and
-    Mexico. As part of the G2 modernization project they have migrating all of thier services
-    into new systems using latest technologies like Angular, Spring boot, Hibernate. For the past
-    two years I have been working as a full stack developer.`
+    Mexico. As part of the G2 modernization project they are migrating all of thier legacy systems
+    into new microservices and responsive web applications using latest technologies like Angular, 
+    Spring boot, Hibernate. I have been working for Uline for past two years on one of the key project, Quotes.
+    My daily duties include working with business team to groom stories, sorting out technical approaches, working with 
+    UX designers to get mock ups for the screens and active coding both in front-end and back-end.`
   }), new Project({
     clientName: "Wellsfargo",
     duration: "Jan 2016 to Jan 2017",
-    description: `Wellsfargo (Mortgage) aplication is a giant application and has been processing a
-    huge number of mortagage applications in US. During my tenure at Wellsfasrgo, I got chance to 
-    work on developing new features and integrating with other external services using different
-    technologies AngularJS, Spring, Hibernate.`
+    description: `Wellsfargo (Mortgage) aplication was a giant application and was one of the leading company in processing a
+    huge number of mortagage applications in the US. During my tenure at Wellsfasrgo, I worked on a webapplication which was embedded into the
+    existing application.
+    `
   }),
   new Project({
     clientName: "All Tech Media",
     duration: "Jan 2014 to July 2014",
     description: `All Tech Media is an IT consulting firm which helps clients in all pahses of the
-    application development. During my tenure at All tech Media, I was part of a development in building
-    responsive web applications using variety of front-end technologies and also worked on the server
-    sie coding using Java.`
+    application development. During my perios at All Tech Media, I was part of a development team in building
+    responsive web applications using variety of front-end technologies and creating Rest services using using Java and Spring framework`
   })]
 
 
+  // educationDetails
+  educationDetails  = [
+    new Education({
+      collegeName: 'Oklahoma Christian University',
+      duration: 'July 2014 to Dec 2015',
+      degreeName: 'Master of Science in Engineering',
+      description: 'Completed masters with 3.5 GPA'
+    })
+  ]
+
   // skills
   skills = ['React', 'Angular', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Protractor', 'Karma', 'ngRx',
-            'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API' ];
+    'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API'];
 }

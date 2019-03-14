@@ -25,7 +25,7 @@ export class ProjectCardComponent {
 
   ngOnChanges(changes) {
     if (changes && changes.project) {
-      this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle(`url('../../../assets/${this.getImageString()}')`)
+      this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle(`url('../../../dist/assets/${this.getImageString()}')`)
     }
   }
 }
