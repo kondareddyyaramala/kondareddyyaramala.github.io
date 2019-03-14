@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Header Comp -->\n    <header></header>\n    <br>\n\n    <!-- About me / something better -->\n    <heading [heading]=\"'About Me'\"></heading>\n    <about-me></about-me>\n    <br>\n\n    <!-- Projects -->\n    <heading [heading]=\"'Projects'\"></heading>\n    <div *ngFor=\"let project of projects\">\n      <project-card [project]=\"project\"></project-card>\n      <br>\n    </div>\n\n    <!-- Education details -->\n    <heading [heading]=\"'Education'\"></heading>\n    <div *ngFor=\"let education of educationDetails\">\n      <education [education]=\"education\"></education>\n      <br>\n    </div>\n\n    <!-- Skill set -->\n    <heading [heading]=\"'Skills'\"></heading>\n    <skill-set [skills]=\"skills\"></skill-set>\n    <br>\n\n    <!-- Download resume -->\n  </div>\n</div>"
+module.exports = "<div class=\"row\">\r\n  <div class=\"container\">\r\n    <!-- Header Comp -->\r\n    <header></header>\r\n    <br>\r\n\r\n    <!-- About me / something better -->\r\n    <heading [heading]=\"'About Me'\"></heading>\r\n    <about-me></about-me>\r\n    <br>\r\n\r\n    <!-- Projects -->\r\n    <heading [heading]=\"'Projects'\"></heading>\r\n    <div *ngFor=\"let project of projects\">\r\n      <project-card [project]=\"project\"></project-card>\r\n      <br>\r\n    </div>\r\n\r\n    <!-- Education details -->\r\n    <heading [heading]=\"'Education'\"></heading>\r\n    <div *ngFor=\"let education of educationDetails\">\r\n      <education [education]=\"education\"></education>\r\n      <br>\r\n    </div>\r\n\r\n    <!-- Skill set -->\r\n    <heading [heading]=\"'Skills'\"></heading>\r\n    <skill-set [skills]=\"skills\"></skill-set>\r\n    <br>\r\n\r\n    <!-- Download resume -->\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "<div class=\"row\">\n  <div class=\"container\">\n    <!-- Hea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".row .container {\n  padding-left: 20px;\n  padding-right: 10px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRVEsa0JBQWtCO0VBQ2xCLG1CQUFtQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJvd3tcbiAgICAuY29udGFpbmVye1xuICAgICAgICBwYWRkaW5nLWxlZnQ6IDIwcHg7XG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG4gICAgfVxufVxuIl19 */"
+module.exports = ".row .container {\n  padding-left: 20px;\n  padding-right: 10px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFdvcmtzcGFjZVxccHJhY3RpY2VcXGtvbmRhcmVkZHl5YXJhbWFsYS5naXRodWIuaW8vc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVRLGtCQUFrQjtFQUNsQixtQkFBbUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5yb3d7XHJcbiAgICAuY29udGFpbmVye1xyXG4gICAgICAgIHBhZGRpbmctbGVmdDogMjBweDtcclxuICAgICAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xyXG4gICAgfVxyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -217,7 +217,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"example-card\">\n  <mat-card-content>\n    I am a software developer focussed in full stack development. Actively working on Angular, React, Spring, and Hibernate\n    frameworks. I have a proven record of building web application from scratch to production ready using front-end frameworks/libraries liek React, Angular,\n     and back-end frameworks like Spring, Spring-boot and Hibernate. I am very passionate about web development and active learner of new technologies. I always think\n    about a problem in different ways and achieve a solution that suits best to solve the business problems with out\n    compromising in quality and performance.\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"example-card\">\r\n  <mat-card-content>\r\n    I am a software developer focussed in full stack development. Actively working on Angular, React, Spring, and Hibernate\r\n    frameworks. I have a proven record of building web application from scratch to production ready using front-end frameworks/libraries liek React, Angular,\r\n     and back-end frameworks like Spring, Spring-boot and Hibernate. I am very passionate about web development and active learner of new technologies. I always think\r\n    about a problem in different ways and achieve a solution that suits best to solve the business problems with out\r\n    compromising in quality and performance.\r\n  </mat-card-content>\r\n</mat-card>"
 
 /***/ }),
 
@@ -228,7 +228,7 @@ module.exports = "<mat-card class=\"example-card\">\n  <mat-card-content>\n    I
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about-me {\n  display: flex;\n  justify-content: center;\n  border: 1px solid;\n  box-shadow: 1px 1px; }\n  .about-me .description {\n    padding: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsaUJBQWlCO0VBQ2pCLG1CQUFtQixFQUFBO0VBSnZCO0lBTVEsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hYm91dC1tZXtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xuICAgIGJveC1zaGFkb3c6IDFweCAxcHg7XG4gICAgLmRlc2NyaXB0aW9ue1xuICAgICAgICBwYWRkaW5nOiA1cHg7XG4gICAgfVxufSJdfQ== */"
+module.exports = ".about-me {\n  display: flex;\n  justify-content: center;\n  border: 1px solid;\n  box-shadow: 1px 1px; }\n  .about-me .description {\n    padding: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9DOlxcV29ya3NwYWNlXFxwcmFjdGljZVxca29uZGFyZWRkeXlhcmFtYWxhLmdpdGh1Yi5pby9zcmNcXGFwcFxcY29tcG9uZW50c1xcYWJvdXQtbWVcXGFib3V0LW1lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixpQkFBaUI7RUFDakIsbUJBQW1CLEVBQUE7RUFKdkI7SUFNUSxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2Fib3V0LW1lL2Fib3V0LW1lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFib3V0LW1le1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQ7XHJcbiAgICBib3gtc2hhZG93OiAxcHggMXB4O1xyXG4gICAgLmRlc2NyaXB0aW9ue1xyXG4gICAgICAgIHBhZGRpbmc6IDVweDtcclxuICAgIH1cclxufSJdfQ== */"
 
 /***/ }),
 
@@ -273,7 +273,7 @@ var AboutMeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"education-card\">\n  <mat-card-header>\n    <mat-card-title>\n      {{education?.collegeName}}\n    </mat-card-title>\n    <mat-card-subtitle>\n        <span>{{education?.degreeName}}</span>\n        <span> &nbsp;  -  &nbsp; </span>\n        <span>{{education?.duration}}</span>\n    </mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{education?.description}}\n    </p>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"education-card\">\r\n  <mat-card-header>\r\n    <mat-card-title>\r\n      {{education?.collegeName}}\r\n    </mat-card-title>\r\n    <mat-card-subtitle>\r\n        <span>{{education?.degreeName}}</span>\r\n        <span> &nbsp;  -  &nbsp; </span>\r\n        <span>{{education?.duration}}</span>\r\n    </mat-card-subtitle>\r\n  </mat-card-header>\r\n  <mat-card-content>\r\n    <p>\r\n      {{education?.description}}\r\n    </p>\r\n  </mat-card-content>\r\n</mat-card>"
 
 /***/ }),
 
@@ -335,7 +335,7 @@ var EducationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header\">\n  <div class=\"name\">Konda Reddy Yaramala</div>\n  <div class=\"role\">Software Developer</div>\n</div>\n"
+module.exports = "<div class=\"header\">\r\n  <div class=\"name\">Konda Reddy Yaramala</div>\r\n  <div class=\"role\">Software Developer</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -346,7 +346,7 @@ module.exports = "<div class=\"header\">\n  <div class=\"name\">Konda Reddy Yara
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  background-color: #546E7A;\n  height: 60px;\n  align-items: center;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLFlBQVksRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTQ2RTdBO1xuICAgIGhlaWdodDogNjBweDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAvLyBib3JkZXItYm90dG9tOiAxMHB4IHNvbGlkIGdyZWVuO1xufSJdfQ== */"
+module.exports = ".header {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-content: center;\n  background-color: #546E7A;\n  height: 60px;\n  align-items: center;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvQzpcXFdvcmtzcGFjZVxccHJhY3RpY2VcXGtvbmRhcmVkZHl5YXJhbWFsYS5naXRodWIuaW8vc3JjXFxhcHBcXGNvbXBvbmVudHNcXGhlYWRlclxcaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2hlYWRlci9DOlxcV29ya3NwYWNlXFxwcmFjdGljZVxca29uZGFyZWRkeXlhcmFtYWxhLmdpdGh1Yi5pby9zcmNcXGFwcFxcY29tbW9uXFxzdHlsZXNcXF92YXJpYWJsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLHFCQUFxQjtFQUNyQix5QkNKa0I7RURLbEIsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQixZQ0xpQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vY29tbW9uL3N0eWxlcy92YXJpYWJsZXMnO1xyXG4uaGVhZGVye1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGxpZ2h0LWJsdWUpO1xyXG4gICAgaGVpZ2h0OiA2MHB4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGNvbG9yOiBjb2xvcihwdXJlLXdoaXRlKTtcclxufSIsIi8vIGNyZWF0ZSBhIGNvbG9yIG1hcFxyXG4kY29sb3JzLW1hcDogKFxyXG4gICAgbGlnaHQtYmx1ZTojNTQ2RTdBLFxyXG4gICAgbGlnaHQtZ3JlZW46IGdyZWVuLFxyXG4gICAgcHVyZS13aGl0ZTogd2hpdGVcclxuKTtcclxuXHJcbi8vIGNyZWF0ZSBhIGZ1bmN0aW9uIHRvIHJldHVybiB0aGUgY29sb3IgYmFzZWQgb24gdGhlIHBhc3NlZCBpbiBjb2xvciBuYW1lXHJcbkBmdW5jdGlvbiBjb2xvcigkY29sb3ItbmFtZSkge1xyXG4gIEBpZihtYXAtaGFzLWtleSgkY29sb3JzLW1hcCwgJGNvbG9yLW5hbWUpKXtcclxuICAgICAgQHJldHVybiBtYXAtZ2V0KCRjb2xvcnMtbWFwLCAkY29sb3ItbmFtZSlcclxuICB9XHJcblxyXG4gIEB3YXJuIFwiVW5rbm93biBjb2xvciBuYW1lXCI7XHJcbiAgQHJldHVybiBudWxsO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -391,7 +391,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n  <h3 class=\"heading\"> {{ heading }}</h3>\n</div>\n"
+module.exports = "<div class=\"wrapper\">\r\n  <h3 class=\"heading\"> {{ heading }}</h3>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -402,7 +402,7 @@ module.exports = "<div class=\"wrapper\">\n  <h3 class=\"heading\"> {{ heading }
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n  display: flex;\n  align-content: center;\n  justify-content: center; }\n  .wrapper .heading {\n    border-bottom: 2px solid #546E7A; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9oZWFkaW5nL2hlYWRpbmcuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IscUJBQXFCO0VBQ3JCLHVCQUF1QixFQUFBO0VBSDNCO0lBS1EsZ0NBQWdDLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hlYWRpbmcvaGVhZGluZy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53cmFwcGVye1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC5oZWFkaW5ne1xuICAgICAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzU0NkU3QTtcbiAgICB9XG59Il19 */"
+module.exports = ".wrapper {\n  display: flex;\n  align-content: center;\n  justify-content: center; }\n  .wrapper .heading {\n    border-bottom: 2px solid #546E7A; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkaW5nL0M6XFxXb3Jrc3BhY2VcXHByYWN0aWNlXFxrb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyY1xcYXBwXFxjb21wb25lbnRzXFxoZWFkaW5nXFxoZWFkaW5nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHFCQUFxQjtFQUNyQix1QkFBdUIsRUFBQTtFQUgzQjtJQUtRLGdDQUFnQyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9oZWFkaW5nL2hlYWRpbmcuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud3JhcHBlcntcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIC5oZWFkaW5ne1xyXG4gICAgICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAjNTQ2RTdBO1xyXG4gICAgfVxyXG59Il19 */"
 
 /***/ }),
 
@@ -451,7 +451,7 @@ var HeadingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"pill\">\n  {{skill}}\n</div>"
+module.exports = "<div class=\"pill\">\r\n  {{skill}}\r\n</div>"
 
 /***/ }),
 
@@ -462,7 +462,7 @@ module.exports = "<div class=\"pill\">\n  {{skill}}\n</div>"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pill {\n  border-radius: 10px;\n  color: white;\n  background-color: #546E7A;\n  padding: 5px;\n  padding-left: 6px;\n  margin: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9waWxsL3BpbGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLFdBQVcsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGlsbC9waWxsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBpbGx7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzU0NkU3QTtcbiAgICBwYWRkaW5nOiA1cHg7XG4gICAgcGFkZGluZy1sZWZ0OiA2cHg7XG4gICAgbWFyZ2luOiA1cHg7XG59Il19 */"
+module.exports = ".pill {\n  border-radius: 10px;\n  color: white;\n  background-color: #546E7A;\n  padding: 5px;\n  padding-left: 6px;\n  margin: 5px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waWxsL0M6XFxXb3Jrc3BhY2VcXHByYWN0aWNlXFxrb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwaWxsXFxwaWxsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3BpbGwvQzpcXFdvcmtzcGFjZVxccHJhY3RpY2VcXGtvbmRhcmVkZHl5YXJhbWFsYS5naXRodWIuaW8vc3JjXFxhcHBcXGNvbW1vblxcc3R5bGVzXFxfdmFyaWFibGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSxtQkFBbUI7RUFDbkIsWUNDaUI7RURBakIseUJDRmtCO0VER2xCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsV0FBVyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9waWxsL3BpbGwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi9jb21tb24vc3R5bGVzL3ZhcmlhYmxlcyc7XHJcbi5waWxse1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgIGNvbG9yOiBjb2xvcihwdXJlLXdoaXRlKTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGxpZ2h0LWJsdWUpO1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG4gICAgcGFkZGluZy1sZWZ0OiA2cHg7XHJcbiAgICBtYXJnaW46IDVweDtcclxufSIsIi8vIGNyZWF0ZSBhIGNvbG9yIG1hcFxyXG4kY29sb3JzLW1hcDogKFxyXG4gICAgbGlnaHQtYmx1ZTojNTQ2RTdBLFxyXG4gICAgbGlnaHQtZ3JlZW46IGdyZWVuLFxyXG4gICAgcHVyZS13aGl0ZTogd2hpdGVcclxuKTtcclxuXHJcbi8vIGNyZWF0ZSBhIGZ1bmN0aW9uIHRvIHJldHVybiB0aGUgY29sb3IgYmFzZWQgb24gdGhlIHBhc3NlZCBpbiBjb2xvciBuYW1lXHJcbkBmdW5jdGlvbiBjb2xvcigkY29sb3ItbmFtZSkge1xyXG4gIEBpZihtYXAtaGFzLWtleSgkY29sb3JzLW1hcCwgJGNvbG9yLW5hbWUpKXtcclxuICAgICAgQHJldHVybiBtYXAtZ2V0KCRjb2xvcnMtbWFwLCAkY29sb3ItbmFtZSlcclxuICB9XHJcblxyXG4gIEB3YXJuIFwiVW5rbm93biBjb2xvciBuYW1lXCI7XHJcbiAgQHJldHVybiBudWxsO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -508,7 +508,7 @@ var PillComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"project-card\">\n  <mat-card-header>\n    <div mat-card-avatar\n    [style.background-size]= \"'cover'\"\n    [style.background-image]=\"backGroundImg\"></div>\n    <mat-card-title>{{project?.clientName}}</mat-card-title>\n    <mat-card-subtitle>{{project?.duration}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{project?.description}}\n    </p>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"project-card\">\r\n  <mat-card-header>\r\n    <div mat-card-avatar\r\n    [style.background-size]= \"'cover'\"\r\n    [style.background-image]=\"backGroundImg\"></div>\r\n    <mat-card-title>{{project?.clientName}}</mat-card-title>\r\n    <mat-card-subtitle>{{project?.duration}}</mat-card-subtitle>\r\n  </mat-card-header>\r\n  <mat-card-content>\r\n    <p>\r\n      {{project?.description}}\r\n    </p>\r\n  </mat-card-content>\r\n</mat-card>"
 
 /***/ }),
 
@@ -582,7 +582,7 @@ var ProjectCardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"skill-set\">\n  <ng-container class=\"skill\" *ngFor=\"let skill of skills\">\n    <pill [skill]=\"skill\"></pill>\n  </ng-container>\n</div>"
+module.exports = "<div class=\"skill-set\">\r\n  <ng-container class=\"skill\" *ngFor=\"let skill of skills\">\r\n    <pill [skill]=\"skill\"></pill>\r\n  </ng-container>\r\n</div>"
 
 /***/ }),
 
@@ -593,7 +593,7 @@ module.exports = "<div class=\"skill-set\">\n  <ng-container class=\"skill\" *ng
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".skill-set {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9wcmFjdGljZS9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNraWxsLXNldHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBwYWRkaW5nLWxlZnQ6IDMwJTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAzMCU7XG5cbn0iXX0= */"
+module.exports = ".skill-set {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvQzpcXFdvcmtzcGFjZVxccHJhY3RpY2VcXGtvbmRhcmVkZHl5YXJhbWFsYS5naXRodWIuaW8vc3JjXFxhcHBcXGNvbXBvbmVudHNcXHNraWxsLXNldFxcc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNraWxsLXNldHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGZsZXgtd3JhcDogd3JhcDtcclxuICAgIHBhZGRpbmctbGVmdDogMzAlO1xyXG4gICAgcGFkZGluZy1yaWdodDogMzAlO1xyXG5cclxufSJdfQ== */"
 
 /***/ }),
 
@@ -828,7 +828,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nani/git/practice/kondareddyyaramala.github.io/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Workspace\practice\kondareddyyaramala.github.io\src\main.ts */"./src/main.ts");
 
 
 /***/ })
