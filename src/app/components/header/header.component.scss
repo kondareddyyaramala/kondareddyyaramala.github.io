@@ -1,11 +1,12 @@
+@import '../../common/styles/variables';
 .header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: #546E7A;
+    background-color: color(light-blue);
     height: 60px;
     align-items: center;
-    color: white;
-    border-bottom: 10px solid green;
+    color: color(pure-white);
+    border-bottom: 10px solid color(light-green);
 }
