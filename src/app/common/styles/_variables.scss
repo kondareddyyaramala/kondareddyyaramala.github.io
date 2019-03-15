@@ -11,6 +11,6 @@ $colors-map: (
       @return map-get($colors-map, $color-name)
   }
 
-  @warn "Unknown color name";
+  @warn "Unknown color name #{$color-name}";
   @return null;
 }
