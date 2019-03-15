@@ -1,3 +1,4 @@
+@import '../../common/styles/fonts.scss';
 .about-me{
     display: flex;
     justify-content: center;
@@ -5,5 +6,9 @@
     box-shadow: 1px 1px;
     .description{
         padding: 5px;
+    }
+
+    .content{
+        font-family: $ff-avant-garde-bold !important;
     }
 }
