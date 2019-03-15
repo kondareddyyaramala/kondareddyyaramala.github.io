@@ -1,5 +1,9 @@
 @import './common/styles/fonts.scss';
+@import '~@angular/material/theming';
 .row{
+    $config: mat-typography-config(#{"'Poiret One', cursive;"});
+    font-size: mat-font-size($config, headline);
+    font-family: mat-font-family($config);
     .container{
         padding-left: 20px;
         padding-right: 10px;
