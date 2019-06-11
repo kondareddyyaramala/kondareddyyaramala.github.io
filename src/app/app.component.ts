@@ -20,11 +20,24 @@ export class AppComponent {
   }, {
     clientName: "Wellsfargo",
     duration: "Jan 2016 to Jan 2017",
-    description: `Wellsfargo (Mortgage) aplication was a giant application and was one of the leading company in processing a
-    huge number of mortagage applications in the US. During my tenure at Wellsfasrgo, I worked on a webapplication which was embedded into the
-    existing application.
+    description: `Wells Fargo Mortgage is a giant web application which processes mortgage 
+    applications across the U.S. I have worked on multiple projects during my tenure at Wells Fargo 
+    which are mainly focussed on adding additional features to the existing mortgage application. 
+    I have worked on IITS project which was to pull the customer bank account information to the 
+    mortgage application which needed a lot of integration effort with the external services. 
     `
-  },{
+  },
+  {
+    clientName: "Oklahoma Christian University",
+    duration: "Aug 2014 to Dec 2015",
+    description: `During my Masters at OCU, I was given an opportunity to work with the internal 
+    application team; I was mainly helping web application team in fixing bugs that were found in 
+    the university's web site, also worked on some of the enhancements that were requested by the 
+    users/admin department. During this time, I was working with HTML, Jquery, CSS, and Java.
+    `
+  },
+
+  {
     clientName: "All Tech Media",
     duration: "Jan 2014 to July 2014",
     description: `All Tech Media is an IT consulting firm which helps clients in all pahses of the
@@ -34,7 +47,7 @@ export class AppComponent {
 
 
   // educationDetails
-  educationDetails: Education[]  = [
+  educationDetails: Education[] = [
     {
       collegeName: 'Oklahoma Christian University',
       duration: 'July 2014 to Dec 2015',
@@ -44,6 +57,6 @@ export class AppComponent {
   ];
 
   // skills
-  skills: string[] = ['React', 'Angular', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Protractor', 'Karma', 'ngRx',
-    'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API'];
+  skills: string[] = ['React', 'Angular', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Pug', 'SCSS', 'Typescript', 'DOM', 'CSSOM',
+     'Protractor', 'Karma', 'ngRx', 'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API'];
 }
