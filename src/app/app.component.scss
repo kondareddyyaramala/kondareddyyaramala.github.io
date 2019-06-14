@@ -1,4 +1,5 @@
 @import './common/styles/fonts.scss';
+@import './common/styles/mixins';
 @import '~@angular/material/theming';
 .row {
     $config: mat-typography-config(#{"'Poiret One', cursive;"});
@@ -8,4 +9,5 @@
         padding-left: 20px;
         padding-right: 10px;
     }
+    @include fade-in();
 }
