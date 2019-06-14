@@ -1,6 +1,6 @@
 @import './common/styles/fonts.scss';
 @import '~@angular/material/theming';
-.row{
+.row {
     $config: mat-typography-config(#{"'Poiret One', cursive;"});
     font-size: mat-font-size($config, headline);
     font-family: mat-font-family($config);
