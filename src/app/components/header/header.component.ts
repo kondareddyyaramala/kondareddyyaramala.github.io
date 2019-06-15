@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'header',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  constructor(private domSanitizer: DomSanitizer){
+
+  }
+
+  get style() {
+    return this.domSanitizer.bypassSecurityTrustStyle(`--bgc: url('../../../dist/assets/coder-image.png')`);
+  }
 
   routeTo(platform: string) {
     const openInNewTab = (url: string) => window.open(url, platform);
