@@ -1,21 +1,34 @@
 @import '../../common/styles/variables';
 .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-color: color(light-blue);
-    height: 160px;
-    padding: 5px;
-    align-items: center;
-    color: color(pure-white);
-    font-weight: bold;
-    border: {
-        bottom-left-radius: 15px;
-        bottom-right-radius: 15px;
+    position: relative;
+    margin-bottom: 10px;
+    .coder-image{
+        border: {
+            bottom-left-radius: 30px;
+            bottom-right-radius: 30px;
+        }
     }
-
-    img:hover{
-        cursor: pointer;
+    .details {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+        padding: 5px;
+        color: color(pure-white);
+        font-weight: bold;
+        border: {
+            bottom-left-radius: 15px;
+            bottom-right-radius: 15px;
+        }
+    
+        img:hover{
+            cursor: pointer;
+        }
     }
+ 
 }
