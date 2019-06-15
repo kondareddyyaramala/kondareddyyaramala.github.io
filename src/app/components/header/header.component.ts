@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'header',
@@ -7,13 +7,14 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public safeStyle: SafeStyle;
 
   constructor(private domSanitizer: DomSanitizer){
 
   }
 
-  get style() {
-    return this.domSanitizer.bypassSecurityTrustStyle(`--bgc: url('../../../dist/assets/coder-image.png')`);
+  ngAfterViewInit() {
+    this.safeStyle = this.domSanitizer.bypassSecurityTrustStyle(`--bgc: url('../../../dist/assets/coder-image.png')`);
   }
 
   routeTo(platform: string) {
