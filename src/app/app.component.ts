@@ -12,7 +12,7 @@ export class AppComponent {
     clientName: "Uline",
     duration: "Feb 2017 to present",
     description: `Uline is a shipping supply company which has active operations in US, Canada, and
-    Mexico. As part of the G2 modernization project they are migrating all of thier legacy systems
+    Mexico. As part of the G2 modernization project, they are migrating all of thier legacy systems
     into new microservices and responsive web applications using latest technologies like Angular, 
     Spring boot, Hibernate. I have been working for Uline for past two years on one of the key project, Quotes.
     My daily duties include working with business team to groom stories, sorting out technical approaches, working with 
