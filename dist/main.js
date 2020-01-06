@@ -97,7 +97,7 @@ var AppComponent = /** @class */ (function () {
         this.projects = [{
                 clientName: "Uline",
                 duration: "Feb 2017 to present",
-                description: "Uline is a shipping supply company which has active operations in US, Canada, and\n    Mexico. As part of the G2 modernization project they are migrating all of thier legacy systems\n    into new microservices and responsive web applications using latest technologies like Angular, \n    Spring boot, Hibernate. I have been working for Uline for past two years on one of the key project, Quotes.\n    My daily duties include working with business team to groom stories, sorting out technical approaches, working with \n    UX designers to get mock ups for the screens and active coding both in front-end and back-end."
+                description: "Uline is a shipping supply company which has active operations in US, Canada, and\n    Mexico. As part of the G2 modernization project, they are migrating all of thier legacy systems\n    into new microservices and responsive web applications using latest technologies like Angular, \n    Spring boot, Hibernate. I have been working for Uline for past two years on one of the key project, Quotes.\n    My daily duties include working with business team to groom stories, sorting out technical approaches, working with \n    UX designers to get mock ups for the screens and active coding both in front-end and back-end."
             }, {
                 clientName: "Wellsfargo",
                 duration: "Jan 2016 to Jan 2017",
