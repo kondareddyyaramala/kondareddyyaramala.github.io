@@ -95,8 +95,12 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.projects = [{
+                clientName: "Maximus",
+                duration: "July 2020 to present",
+                description: "Maximus enables citizens around the globe to successfully engage with their governments at all levels and across a variety of programs by delivering innovative business process management and technology solutions that contribute to improved outcomes for citizens and higher levels of productivity, accuracy, accountability, and efficiency of government-sponsored programs."
+            }, {
                 clientName: "Uline",
-                duration: "Feb 2017 to present",
+                duration: "Feb 2017 to June 2020",
                 description: "Uline is a shipping supply company which has active operations in US, Canada, and\n    Mexico. As part of the G2 modernization project, they are migrating all of thier legacy systems\n    into new microservices and responsive web applications using latest technologies like Angular, \n    Spring boot, Hibernate. I have been working for Uline for past two years on one of the key project, Quotes.\n    My daily duties include working with business team to groom stories, sorting out technical approaches, working with \n    UX designers to get mock ups for the screens and active coding both in front-end and back-end."
             }, {
                 clientName: "Wellsfargo",
@@ -119,7 +123,7 @@ var AppComponent = /** @class */ (function () {
         ];
         // skills
         this.skills = ['React', 'Angular', 'VueJS', 'Javascript', 'HTML5', 'CSS3', 'Redux', 'Jasmine', 'Pug', 'SCSS', 'Typescript', 'DOM', 'CSSOM',
-            'Protractor', 'Karma', 'ngRx', 'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API'];
+            'Protractor', 'Karma', 'ngRx', 'Java', 'Spring', 'Spring boot', 'Hibernate', 'Junit', 'Microservices', 'Rest API', 'Docker', 'Apigee', 'Pivotal Cloud Foundry'];
     }
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
