@@ -333,7 +333,7 @@ var EducationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div [attr.style]=\"safeStyle\">\n   <div class=\"header\">\n      <div class=\"details\">\n         <h1 class=\"name\">Konda Reddy Yaramala</h1>\n         <h3 class=\"role\">Software Developer</h3>\n         <div>\n            <img title=\"Open LinkedIn Profile\" (click)=\"routeTo('linkedIn')\"\n               src=\"https://img.icons8.com/color/64/000000/linkedin.png\">\n            <img title=\"Open Github Profile\" (click)=\"routeTo('github')\"\n               src=\"https://img.icons8.com/nolan/64/000000/github.png\">\n         </div>\n      </div>\n   </div>\n</div>"
+module.exports = "<div [attr.style]=\"safeStyle\">\n   <div class=\"header\">\n      <div class=\"details\">\n         <h1 class=\"name\">Konda Reddy Yaramala</h1>\n         <h3 class=\"role\">Software Developer</h3>\n         <div>\n            <img title=\"Open LinkedIn Profile\" (click)=\"routeTo('linkedIn')\"\n               src=\"https://img.icons8.com/color/64/000000/linkedin.png\">\n            <img title=\"Open Github Profile\" (click)=\"routeTo('github')\"\n               src=\"https://img.icons8.com/bubbles/50/000000/github.png\">\n         </div>\n      </div>\n   </div>\n</div>"
 
 /***/ }),
 
