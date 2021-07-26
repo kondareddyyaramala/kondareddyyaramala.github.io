@@ -2,31 +2,41 @@
   <header></header>
   <div class="row">
     <div class="container">
-      <!-- About me / something better -->
-      <heading [heading]="'About Me'"></heading>
-      <about-me></about-me>
+      <!-- About me -->
+      <section>
+        <heading [heading]="'About Me'"></heading>
+        <about-me></about-me>
+      </section>
+
       <br>
 
       <!-- Projects -->
-      <heading [heading]="'Projects'"></heading>
-      <div *ngFor="let project of projects">
-        <project-card [project]="project"></project-card>
-        <br>
-      </div>
+      <section>
+        <heading [heading]="'Projects'"></heading>
+        <div *ngFor="let project of projects">
+          <project-card [project]="project"></project-card>
+          <br>
+        </div>
+      </section>
+
 
       <!-- Education details -->
-      <heading [heading]="'Education'"></heading>
-      <div *ngFor="let education of educationDetails">
-        <education [education]="education"></education>
-        <br>
-      </div>
+      <section>
+        <heading [heading]="'Education'"></heading>
+        <div *ngFor="let education of educationDetails">
+          <education [education]="education"></education>
+          <br>
+        </div>
+      </section>
+
 
       <!-- Skill set -->
-      <heading [heading]="'Skills'"></heading>
-      <skill-set [skills]="skills"></skill-set>
-      <br>
+      <section>
+        <heading [heading]="'Skills'"></heading>
+        <skill-set [skills]="skills"></skill-set>
+      </section>
 
-      <!-- Download resume -->
+      <br>
     </div>
   </div>
 </div>

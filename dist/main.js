@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"app\">\n  <header></header>\n  <div class=\"row\">\n    <div class=\"container\">\n      <!-- About me / something better -->\n      <heading [heading]=\"'About Me'\"></heading>\n      <about-me></about-me>\n      <br>\n\n      <!-- Projects -->\n      <heading [heading]=\"'Projects'\"></heading>\n      <div *ngFor=\"let project of projects\">\n        <project-card [project]=\"project\"></project-card>\n        <br>\n      </div>\n\n      <!-- Education details -->\n      <heading [heading]=\"'Education'\"></heading>\n      <div *ngFor=\"let education of educationDetails\">\n        <education [education]=\"education\"></education>\n        <br>\n      </div>\n\n      <!-- Skill set -->\n      <heading [heading]=\"'Skills'\"></heading>\n      <skill-set [skills]=\"skills\"></skill-set>\n      <br>\n\n      <!-- Download resume -->\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"app\">\n  <header></header>\n  <div class=\"row\">\n    <div class=\"container\">\n      <!-- About me -->\n      <section>\n        <heading [heading]=\"'About Me'\"></heading>\n        <about-me></about-me>\n      </section>\n\n      <br>\n\n      <!-- Projects -->\n      <section>\n        <heading [heading]=\"'Projects'\"></heading>\n        <div *ngFor=\"let project of projects\">\n          <project-card [project]=\"project\"></project-card>\n          <br>\n        </div>\n      </section>\n\n\n      <!-- Education details -->\n      <section>\n        <heading [heading]=\"'Education'\"></heading>\n        <div *ngFor=\"let education of educationDetails\">\n          <education [education]=\"education\"></education>\n          <br>\n        </div>\n      </section>\n\n\n      <!-- Skill set -->\n      <section>\n        <heading [heading]=\"'Skills'\"></heading>\n        <skill-set [skills]=\"skills\"></skill-set>\n      </section>\n\n      <br>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -217,7 +217,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"about-me\">\n  <mat-card-content class=\"content\">\n    Experienced Software developer with around <strong>6</strong> years of experience focused in full stack development . Actively working on Angular, ReactJS, Spring, and Hibernate frameworks and learning VueJS and Svelte currently. I have a proven record of building web application from scratch to production ready using different front end frameworks, and Spring and Hibernate in back-end. I am very passionate about web development and active learner of new technologies. Analyzing any business problem in multiple aspects and determining best solution that suits best to solve the business problems with out compromising in quality and performance is my strategy.\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"about-me\">\n  <mat-card-content class=\"content\">\n    Experienced Software developer with <strong>6</strong> years of experience focused in full stack development . Actively working on Angular, ReactJS, Spring, and Hibernate frameworks and learning VueJS and Svelte currently. I have a proven record of building web application from scratch to production ready using different front end frameworks, and Spring and Hibernate in back-end. I am very passionate about web development and active learner of new technologies. Analyzing any business problem in multiple aspects and determining best solution that suits best to solve the business problems with out compromising in quality and performance is my strategy.\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
@@ -249,15 +249,12 @@ __webpack_require__.r(__webpack_exports__);
 var AboutMeComponent = /** @class */ (function () {
     function AboutMeComponent() {
     }
-    AboutMeComponent.prototype.ngOnInit = function () {
-    };
     AboutMeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'about-me',
             template: __webpack_require__(/*! ./about-me.component.html */ "./src/app/components/about-me/about-me.component.html"),
             styles: [__webpack_require__(/*! ./about-me.component.scss */ "./src/app/components/about-me/about-me.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        })
     ], AboutMeComponent);
     return AboutMeComponent;
 }());
@@ -305,8 +302,6 @@ __webpack_require__.r(__webpack_exports__);
 var EducationComponent = /** @class */ (function () {
     function EducationComponent() {
     }
-    EducationComponent.prototype.ngOnInit = function () {
-    };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
@@ -316,8 +311,7 @@ var EducationComponent = /** @class */ (function () {
             selector: 'education',
             template: __webpack_require__(/*! ./education.component.html */ "./src/app/components/education/education.component.html"),
             styles: [__webpack_require__(/*! ./education.component.scss */ "./src/app/components/education/education.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        })
     ], EducationComponent);
     return EducationComponent;
 }());
@@ -367,19 +361,19 @@ __webpack_require__.r(__webpack_exports__);
 var HeaderComponent = /** @class */ (function () {
     function HeaderComponent(domSanitizer) {
         this.domSanitizer = domSanitizer;
+        this.LINKS_MAP = new Map()
+            .set("linkedIn", "https://www.linkedin.com/in/konda-reddy-y-50ba71157/")
+            .set("github", "https://github.com/kondareddyyaramala");
     }
     HeaderComponent.prototype.ngAfterViewInit = function () {
         this.safeStyle = this.domSanitizer.bypassSecurityTrustStyle("--bgc: url('../../../dist/assets/coder-image.png')");
     };
     HeaderComponent.prototype.routeTo = function (platform) {
-        var openInNewTab = function (url) { return window.open(url, platform); };
-        platform === 'linkedIn'
-            ? openInNewTab("https://www.linkedin.com/in/konda-reddy-y-50ba71157/")
-            : openInNewTab("https://github.com/kondareddyyaramala");
+        window.open(this.LINKS_MAP.get(platform), platform);
     };
     HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'header',
+            selector: "header",
             template: __webpack_require__(/*! ./header.component.html */ "./src/app/components/header/header.component.html"),
             styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/components/header/header.component.scss")]
         }),
@@ -431,8 +425,6 @@ __webpack_require__.r(__webpack_exports__);
 var HeadingComponent = /** @class */ (function () {
     function HeadingComponent() {
     }
-    HeadingComponent.prototype.ngOnInit = function () {
-    };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
@@ -442,8 +434,7 @@ var HeadingComponent = /** @class */ (function () {
             selector: 'heading',
             template: __webpack_require__(/*! ./heading.component.html */ "./src/app/components/heading/heading.component.html"),
             styles: [__webpack_require__(/*! ./heading.component.scss */ "./src/app/components/heading/heading.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        })
     ], HeadingComponent);
     return HeadingComponent;
 }());
@@ -555,7 +546,12 @@ var ProjectCardComponent = /** @class */ (function () {
         if (!this.project || !this.project.clientName) {
             return null;
         }
-        return this.project.clientName.toLowerCase().split(' ').join('').toString().concat('.png');
+        return this.project.clientName
+            .toLowerCase()
+            .split(" ")
+            .join("")
+            .toString()
+            .concat(".png");
     };
     ProjectCardComponent.prototype.ngOnChanges = function (changes) {
         if (changes && changes.project) {
@@ -568,7 +564,7 @@ var ProjectCardComponent = /** @class */ (function () {
     ], ProjectCardComponent.prototype, "project", void 0);
     ProjectCardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'project-card',
+            selector: "project-card",
             template: __webpack_require__(/*! ./project-card.component.html */ "./src/app/components/project-card/project-card.component.html"),
             styles: [__webpack_require__(/*! ./project-card.component.scss */ "./src/app/components/project-card/project-card.component.scss")]
         }),
@@ -599,7 +595,7 @@ module.exports = "<div class=\"skill-set\">\n  <ng-container class=\"skill\" *ng
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".skill-set {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNraWxsLXNldHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBwYWRkaW5nLWxlZnQ6IDMwJTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAzMCU7XG5cbn0iXX0= */"
+module.exports = ".skill-set {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYW5pL2dpdC9rb25kYXJlZGR5eWFyYW1hbGEuZ2l0aHViLmlvL3NyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9za2lsbC1zZXQvc2tpbGwtc2V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNraWxsLXNldHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBwYWRkaW5nLWxlZnQ6IDMwJTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAzMCU7XG59Il19 */"
 
 /***/ }),
 
@@ -626,7 +622,7 @@ var SkillSetComponent = /** @class */ (function () {
     ], SkillSetComponent.prototype, "skills", void 0);
     SkillSetComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'skill-set',
+            selector: "skill-set",
             template: __webpack_require__(/*! ./skill-set.component.html */ "./src/app/components/skill-set/skill-set.component.html"),
             styles: [__webpack_require__(/*! ./skill-set.component.scss */ "./src/app/components/skill-set/skill-set.component.scss")]
         })
