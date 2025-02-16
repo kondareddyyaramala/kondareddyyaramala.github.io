@@ -234,7 +234,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"about-me\">\n  <mat-card-content class=\"content\">\n    Experienced Software developer with <strong>6</strong> years of experience focused in full stack development . Actively working on Angular, ReactJS, Spring, and Hibernate frameworks and learning VueJS and Svelte currently. I have a proven record of building web application from scratch to production ready using different front end frameworks, and Spring and Hibernate in back-end. I am very passionate about web development and active learner of new technologies. Analyzing any business problem in multiple aspects and determining best solution that suits best to solve the business problems with out compromising in quality and performance is my strategy.\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"about-me\">\n  <mat-card-content class=\"content\">\n    Experienced Software developer with <strong>10</strong> years of experience focused in full stack development . Actively working on Angular, ReactJS, Spring, and Hibernate frameworks and learning VueJS and Svelte currently. I have a proven record of building web application from scratch to production ready using different front end frameworks, and Spring and Hibernate in back-end. I am very passionate about web development and active learner of new technologies. Analyzing any business problem in multiple aspects and determining best solution that suits best to solve the business problems with out compromising in quality and performance is my strategy.\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
